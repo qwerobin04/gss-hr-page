@@ -29,8 +29,8 @@ html.lb-disable-scrolling {
 
 .lightbox .lb-image {
   display: block;
-  width: 800px !important;
-  height: auto !important;
+  width: 800px;
+  height: auto;
   max-width: inherit;
   max-height: none;
   border-radius: 3px;
@@ -46,8 +46,8 @@ html.lb-disable-scrolling {
 .lb-outerContainer {
   position: relative;
   *zoom: 1;
-  width: 800px !important;
-  height: auto !important;
+  width: 800px;
+  height: auto;
   margin: 0 auto;
   border-radius: 4px;
 
