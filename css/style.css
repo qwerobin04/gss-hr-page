@@ -905,6 +905,7 @@ h2.serv-h2 {
   font-size: 12px;
 }
 
+
 }
 
 @media screen and (max-width: 568px) {
@@ -1045,6 +1046,11 @@ p.serv-p {
 .inter-p {
   font-size: 16px;
   margin: 0 30px;
+}
+.gss-map-link {
+  display: flex;
+  top: 95px;
+  right: 0px;
 }
 
 }
