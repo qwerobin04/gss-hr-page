@@ -101,7 +101,7 @@ video {
 
 .header-wrapper {
   max-width: 1110px;
-  margin: auto;
+  margin: 30px auto;
 }
 
 .h-wwaat {
@@ -562,16 +562,14 @@ p.serv-p {
   font-weight: 700;
 }
 
-.gitwu{
+
+.gitwu a {
+  text-decoration: none;
   display: inline-block;
   padding: 20px;
   border-style: solid;
   border-color: #000;
   border-width: 5px;
-}
-
-.gitwu a {
-  text-decoration: none;
 }
 
 .git-h2 {
@@ -745,6 +743,12 @@ p.connect-p {
 .slider .cp-imgSP {
   display: none;
 }
+
+.gitwu a:hover{
+  box-shadow: 0 10px 30px 2px rgba(255, 152, 0, 0.3);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1024px) {
 
 .inter-h2 {
