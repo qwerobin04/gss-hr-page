@@ -116,51 +116,39 @@ $(document).ready(function(){
          focusOnSelect: true
     });
 
+//   STICKY NAV BAR
 
 
-//
-//     $('.car-path-slider_1').slick({
-//       slidesToShow: 1,
-//       slidesToScroll: 1,
-//       dots: false,
-//       infinite: false,
-//       speed: 300,
-//       fade: true,
-//       focusOnSelect: true,
-//       cssEase: 'linear'
-//     });
-// });
-//
-// $('.car-path-slider_2').slick({
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   dots: false,
-//   infinite: false,
-//   speed: 300,
-//   fade: true,
-//   focusOnSelect: true,
-//   cssEase: 'linear'
-// });
-//
-// $('.car-path-slider_3').slick({
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   dots: false,
-//   infinite: false,
-//   speed: 300,
-//   fade: true,
-//   centerMode: true,
-//   focusOnSelect: true,
-//   cssEase: 'linear'
-// });
-// $('.car-path-slider_4').slick({
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   dots: false,
-//   infinite: false,
-//   speed: 300,
-//   fade: true,
-//   centerMode: true,
-//   focusOnSelect: true,
-//   cssEase: 'linear'
-// });
+    var yourNavigation = $("#nav-cont");
+        stickyDiv = "sticky";
+        yourHeader = $('#header-container').height();
+
+    $(window).scroll(function() {
+      if( $(this).scrollTop() > 980) {
+        yourNavigation.addClass(stickyDiv);
+      } else {
+        yourNavigation.removeClass(stickyDiv);
+      }
+    });
+
+
+    $(function($) {
+      $('a[href*="#"]:not([href="#"])').click(function(e) {
+         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
+
+
+          var target = $(this.hash);
+
+          headerHeight = 120;
+
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
+          if (target.length) {
+            $('html,body').stop().animate({
+              scrollTop: target.offset().top - 100 //offsets for fixed header
+            }, 'linear');
+
+          }
+        }
+      });
+    });

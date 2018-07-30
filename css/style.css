@@ -81,7 +81,7 @@ video {
   position: absolute;
   bottom: 20px;
   left: 50%;
-  z-index: 3;
+  z-index: 100;
   cursor: pointer;
 }
 
@@ -90,6 +90,62 @@ video {
 }
 
 /*HEADER STARTS HERE*/
+
+.navbar-container {
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  background: #F7971E;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F7971E, #FFD200);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F7971E, #FFD200); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.navbar-wrapper {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+
+.nav-logo-wrapper {
+  margin-left: 20px;
+}
+
+.navbar {
+  margin-right: 20px;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.navbar ul li {
+  margin: 0 10px;
+}
+
+.nav-logo {
+  width: 60px;
+  height: auto;
+  display: inline-block;
+}
+
+.sticky {
+  position:fixed;
+  top:0;
+  z-index: 5;
+}
 
 .header {
   position: relative;
@@ -112,7 +168,7 @@ video {
 
 .h-content1 {
   margin: 50px 30px 0;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -148,7 +204,7 @@ video {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 100;
+  z-index: 3;
   outline: none;
   border: none;
   font-size: 24px;
@@ -157,20 +213,20 @@ video {
 
 .slick-prev {
   left: 20px;
-  background-image: url(/img/albumPrev.png);
+  background-image: url(/img/prev.png);
   background-repeat: no-repeat;
   cursor: pointer;
   font-size: 0;
-  padding: 20px;
+  padding: 23px;
 }
 
 .slick-next {
   right: 10px;
-  background-image: url(/img/albumNext.png);
+  background-image: url(/img/next.png);
   background-repeat: no-repeat;
   cursor: pointer;
   font-size: 0;
-  padding: 20px;
+  padding: 21px;
 }
 
 .slick-disabled {
@@ -194,28 +250,6 @@ video {
   display: block;
 }
 
-.content-hov {
-  position: absolute;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  vertical-align: middle;
-  background: rgba(0, 0, 0, 0.5);
-  top: 100%;
-  left: 0;
-  margin: 0 auto;
-}
-
-.content-hov p {
-  color: #fff;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 /* EMPLOYEE BENEFITS STARTS HERE */
 
 .eb-container {
@@ -234,7 +268,7 @@ video {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 20px;
+  padding: 50px 20px 0;
 }
 
 .eb-icons {
@@ -292,7 +326,7 @@ h2.tech-title {
 }
 
 p.tech-text {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   color: #fff;
   margin: 50px 100px;
@@ -478,13 +512,12 @@ h2.serv-h2 {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  margin: 50px 50px;
+  padding: 50px 50px 0;
 }
 
 p.serv-p {
   margin: 50px 50px;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -513,7 +546,7 @@ p.serv-p {
   padding-top: 50px;
   background: linear-gradient(white, #dfdfdf);
   border-radius: 7px;
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 50px;
 }
 
@@ -523,7 +556,7 @@ p.serv-p {
   padding-top: 50px;
   background: linear-gradient(white, #dfdfdf);
   border-radius: 7px;
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 50px;
 }
 
@@ -677,8 +710,15 @@ p.connect-p {
 
 #particles-js {
   height: 200px;
-  background-color: #86c240;
   overflow: hidden;
+  background: #e65c00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(left, #F9D423, #e65c00);
+background: -o-linear-gradient(left, #F9D423, #e65c00);
+background: linear-gradient(to right, #F9D423, #e65c00);
+
+  /* Chrome 10-25, Safari 5.1-6 */
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .particles-js-canvas-el {
@@ -767,7 +807,9 @@ p.connect-p {
 }
 
 .gitwu a:hover {
-  box-shadow: 0 10px 30px 2px rgba(255, 152, 0, 0.3);
+  background: #f46b45;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #eea849, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   cursor: pointer;
 }
 
@@ -794,6 +836,7 @@ p.connect-p {
   .connect-icons {
     width: 80%;
   }
+
 }
 
 @media screen and (max-width: 991px) {
@@ -1065,7 +1108,7 @@ p.connect-p {
   }
 
   p.serv-p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .inter-p {
@@ -1102,6 +1145,10 @@ p.connect-p {
     grid-template-columns: 1fr;
   }
 
+  .eb-items {
+    grid-template-columns: 1fr 1fr;
+  }
+
 
 }
 
@@ -1116,4 +1163,9 @@ p.connect-p {
     width: 50%;
     margin: 0;
   }
+
+  .tech-icons {
+    margin: 0 10px;
+  }
+
 }
