@@ -15,6 +15,15 @@ body {
   clear: both;
 }
 
+/*BURGER NAV STARTS HERE*/
+
+#burger-container {
+  display: none;
+}
+
+
+
+
 /*BANNER STARTS HERE*/
 
 .banner {
@@ -81,7 +90,7 @@ video {
   position: absolute;
   bottom: 20px;
   left: 50%;
-  z-index: 100;
+  z-index: 3;
   cursor: pointer;
 }
 
@@ -94,11 +103,13 @@ video {
 .navbar-container {
   position: relative;
   width: 100%;
-  padding: 20px 0;
-  background: #F7971E;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F7971E, #FFD200);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F7971E, #FFD200); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #fff;
+  padding: 10px 0;
+}
 
+.navbar ul li a:hover {
+  background: #f3f3f3;
+  z-index: 100;
 }
 
 .navbar-wrapper {
@@ -113,6 +124,10 @@ video {
   margin-left: 20px;
 }
 
+.nav-logo-wrapper a {
+  display: block;
+}
+
 .navbar {
   margin-right: 20px;
   text-align: center;
@@ -123,11 +138,11 @@ video {
   display: flex;
 }
 
-.navbar ul a {
+.navbar ul li a {
     text-decoration: none;
     color: #000;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 550;
     padding: 20px;
 }
 
@@ -136,15 +151,26 @@ video {
 }
 
 .nav-logo {
-  width: 60px;
+  width: 50px;
   height: auto;
   display: inline-block;
 }
 
 .sticky {
-  position:fixed;
-  top:0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 5;
+  border: 1px solid #ddd;
+}
+
+.burge-nav{
+  display: block;
+}
+
+.hamburger {
+  display: none;
 }
 
 .header {
@@ -212,7 +238,7 @@ video {
 }
 
 .slick-prev {
-  left: 20px;
+  left: 10px;
   background-image: url(/img/prev.png);
   background-repeat: no-repeat;
   cursor: pointer;
@@ -226,7 +252,7 @@ video {
   background-repeat: no-repeat;
   cursor: pointer;
   font-size: 0;
-  padding: 21px;
+  padding: 22px;
 }
 
 .slick-disabled {
@@ -277,7 +303,7 @@ video {
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 20px;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .eb-items {
   display: grid;
@@ -599,6 +625,7 @@ p.serv-p {
   text-transform: uppercase;
   font-size: 60px;
   font-weight: 700;
+  text-shadow: 2px 2px 5px #fff;
 }
 
 .inter-p {
@@ -762,6 +789,10 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   }
 }
 
+.rocket:hover {
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.2);
+}
+
 .rocket a {
   text-decoration: none;
 }
@@ -792,10 +823,11 @@ background: linear-gradient(to right, #F9D423, #e65c00);
 
 /* HOVER FUNCTIONS STARTS HERE */
 
-.img-hov:hover .content-hov {
-  opacity: 1;
-  top: 0;
-  transition: all .4s ease-in-out;
+.img-hov:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: .3s
 }
 
 .img-hov {
@@ -811,6 +843,7 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   background: -webkit-linear-gradient(to right, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #eea849, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   cursor: pointer;
+  text-shadow: 2px 2px 5px #fff;
 }
 
 @media screen and (max-width: 1024px) {
@@ -836,6 +869,99 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   .connect-icons {
     width: 80%;
   }
+  .tech-icons {
+    grid-template-columns: auto auto auto auto;
+    margin: 0 30px;
+  }
+
+#nav-cont {
+  display: none;
+}
+
+/*BURGER NAV STARTS HERE*/
+#burger-container {
+  display: none;
+  width: 20%;
+  padding-left: 5px;
+  background-color: #fff;
+}
+
+.burger-wrapper {
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.burger-logo {
+  padding: 20px;
+  text-align: center;
+}
+
+.burger-logo a {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  color: #000;
+}
+
+img.burger-gss-logo {
+  width: 100%;
+}
+
+.burger-nav {
+  text-align: center;
+  line-height: 2;
+}
+
+.burger-nav ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.burger-nav ul li a:hover {
+  background-color: #ff980066;
+}
+
+.hamburger {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 4px 4px 0;
+  border: 1px solid #a7a7a7;
+  border-radius: 30%;
+}
+
+.burger-img {
+  width: 50px;
+}
+
+.sidebarjq {
+  width: 20%;
+  display: inline-block !important;
+  position: fixed;
+  top: 20px;
+  left: -5px;
+  z-index: 1;
+}
+
+.secondary-containerjq {
+	width: 80%;
+	display: inline-block;
+  margin-left: 20%;
+}
+
+.hamburgerjq {
+  background: #ff980073;
+  position: fixed;
+  top: 20px;
+  left: 22%;
+  z-index: 1;
+}
+
 
 }
 
@@ -850,16 +976,26 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   .jot {
     font-size: 40px;
   }
-  .tech-icons {
-    grid-template-columns: auto auto auto auto;
-    margin: 0 30px;
-  }
   p.serv-p {
     text-align: justify;
   }
   .inter-p {
     font-size: 18px;
   }
+}
+
+
+@media screen and (max-width: 886px) {
+
+  .tech-icons {
+    grid-template-columns:auto auto auto;
+    margin: 0 30px;
+  }
+
+  .burger-nav ul li a {
+    font-size: .8rem;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -982,6 +1118,16 @@ background: linear-gradient(to right, #F9D423, #e65c00);
     width: 65%;
     margin: 0 20px;
   }
+
+  .tech-icons {
+    grid-template-columns: auto auto;
+  }
+
+  img.burger-img {
+    width: 40px;
+  }
+
+
 }
 
 @media screen and (max-width: 568px) {
@@ -1016,9 +1162,6 @@ background: linear-gradient(to right, #F9D423, #e65c00);
     font-size: 7px;
   }
 
-  .tech-icons {
-    grid-template-columns: auto auto;
-  }
 
   p.tech-text {
     text-align: justify;
@@ -1092,7 +1235,7 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   }
 
   .slick-arrow {
-    background-size: 50%;
+    background-size: 100%;
   }
 
   .cp-content-title {
@@ -1149,6 +1292,14 @@ background: linear-gradient(to right, #F9D423, #e65c00);
     grid-template-columns: 1fr 1fr;
   }
 
+  img.burger-img {
+    width: 35px;
+  }
+
+  .burger-nav ul li a {
+    font-size: 10px;
+  }
+
 
 }
 
@@ -1166,6 +1317,10 @@ background: linear-gradient(to right, #F9D423, #e65c00);
 
   .tech-icons {
     margin: 0 10px;
+  }
+
+  img.burger-img {
+    width: 30px;
   }
 
 }

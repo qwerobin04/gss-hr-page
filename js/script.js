@@ -116,39 +116,77 @@ $(document).ready(function(){
          focusOnSelect: true
     });
 
-//   STICKY NAV BAR
+  // STICKY NAV BAR
+
+  $(window).scroll(function(){
+    var sticky = $('#nav-cont'),
+      scroll = $(window).scrollTop();
+
+    if (scroll >= stickyOffset) sticky.addClass('sticky');
+    else sticky.removeClass('sticky');
+});
+ var stickyOffset = $('#nav-cont').offset().top;
 
 
-    var yourNavigation = $("#nav-cont");
-        stickyDiv = "sticky";
-        yourHeader = $('#header-container').height();
+  $(function($) {
+    $('.navbar a[href*="#"]:not([href="#"])').click(function(e) {
+       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
 
-    $(window).scroll(function() {
-      if( $(this).scrollTop() > 980) {
-        yourNavigation.addClass(stickyDiv);
-      } else {
-        yourNavigation.removeClass(stickyDiv);
+        var target = $(this.hash);
+
+        // headerHeight = 120;
+
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
+        if (target.length) {
+          $('html,body').stop().animate({
+            scrollTop: target.offset().top - 60 //offsets for fixed header
+          }, 'linear');
+
+        }
       }
     });
+  });
 
 
-    $(function($) {
-      $('a[href*="#"]:not([href="#"])').click(function(e) {
-         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
-
-
-          var target = $(this.hash);
-
-          headerHeight = 120;
-
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-
-          if (target.length) {
-            $('html,body').stop().animate({
-              scrollTop: target.offset().top - 100 //offsets for fixed header
-            }, 'linear');
-
-          }
-        }
-      });
+  // BURGER NAVIGATION
+  $(document).ready(function(){
+    $(".hamburger").click(function(){
+        $("#burger-container").toggleClass("sidebarjq");
     });
+
+    $(".hamburger").click(function(){
+        $("#secondary-container").toggleClass("secondary-containerjq");
+    });
+
+    $(".hamburger").click(function(){
+        $(".hamburger").toggleClass("hamburgerjq");
+
+  });
+  });
+
+
+    // var yourNavigation = $("#nav-cont");
+    //     stickyDiv = "sticky";
+    //     yourHeader = $('#nav-eb').height();
+    //
+    // $(window).scroll(function() {
+    //   if( $(this).scrollTop() > 650) {
+    //     yourNavigation.addClass(stickyDiv);
+    //   } else {
+    //     yourNavigation.removeClass(stickyDiv);
+    //   }
+    // });
+
+
+
+    // var stickyOffset = $('#nav-cont').offset().top;
+    //
+    // $(window).scroll(function(){
+    //   var sticky = $('#nav-cont'),
+    //   scroll = $(window).scrollTop();
+    //
+    //   if (scroll >= stickyOffset) sticky.addClass('sticky');
+    //   else sticky.removeClass('sticky');
+    //
+    // });
