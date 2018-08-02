@@ -132,7 +132,9 @@ $(document).ready(function(){
     else {
       sticky.removeClass('sticky');
     }
+
 });
+
  var stickyOffset = $('#nav-cont').offset().top;
 
 
@@ -158,19 +160,6 @@ $(document).ready(function(){
     $(".hamburger").click(function(){
         $(".burger-nav").toggleClass("reveal");
         $(".overlay").toggleClass("reveal");
+        setTimeout
     });
   });
-
-  //FULL PAGE JS
-
-    // var yourNavigation = $("#nav-cont");
-    //     stickyDiv = "sticky";
-    //     yourHeader = $('#nav-eb').height();
-    //
-    // $(window).scroll(function() {
-    //   if( $(this).scrollTop() > 650) {
-    //     yourNavigation.addClass(stickyDiv);
-    //   } else {
-    //     yourNavigation.removeClass(stickyDiv);
-    //   }
-    // });
