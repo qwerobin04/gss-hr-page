@@ -180,62 +180,44 @@ $(document).ready(function(){
 
 $(window).on('resize scroll', function() {
 if ($('.h-wwaat').isInViewport()) {
-  $('.h-wwaat').addClass('animated fadeInLeft');
+  $('.h-wwaat').addClass('animated fadeInUp');
 }
 
 if ($('.h-content1').isInViewport()) {
-  $('.h-content1').addClass('animated fadeInRight');
+  $('.h-content1').addClass('animated fadeInUp');
 }
 if ($('.gallery-container').isInViewport()) {
   $('.gallery-container').addClass('animated fadeInUp delay-.5s');
 }
 if ($('.eb').isInViewport()) {
-  $('.eb').addClass('animated fadeInLeft');
+  $('.eb').addClass('animated fadeInUp');
 }
 if ($('.eb-icons').isInViewport()) {
   $('.eb-icons').addClass('animated fadeInUp delay-.5s');
 }
 if ($('.tech-title').isInViewport()) {
-  $('.tech-title').addClass('animated fadeInLeft');
+  $('.tech-title').addClass('animated fadeInUp');
 }
 if ($('.tech-text').isInViewport()) {
-  $('.tech-text').addClass('animated fadeInRight');
+  $('.tech-text').addClass('animated fadeInUp');
 }
 if ($('.tech-img').isInViewport()) {
-  $('.tech-img').addClass('animated rotateIn delay-.5s');
-}
-if ($('.car-path-title').isInViewport()) {
-  $('.car-path-title').addClass('animated fadeInLeft');
-}
-if ($('.car-path-menu').isInViewport()) {
-  $('.car-path-menu').addClass('animated flipInY delay-.4s');
+  $('.tech-img').addClass('animated fadeInUp delay-.5s');
 }
 if ($('.cp-slider').isInViewport()) {
   $('.cp-slider').addClass('animated fadeInUp delay-.8s');
 }
 if ($('.serv-h2').isInViewport()) {
-  $('.serv-h2').addClass('animated fadeInLeft');
+  $('.serv-h2').addClass('animated fadeInUp');
 }
 if ($('.serv-p').isInViewport()) {
-  $('.serv-p').addClass('animated fadeInRight');
+  $('.serv-p').addClass('animated fadeInUp');
 }
 if ($('.s-icons1').isInViewport()) {
-  $('.s-icons1').addClass('animated flipInY delay-8s');
+  $('.s-icons1').addClass('animated fadeInUp delay-8s');
 }
 if ($('.s-icons2').isInViewport()) {
-  $('.s-icons2').addClass('animated flipInY delay-.8s');
-}
-if ($('.inter-h2').isInViewport()) {
-  $('.inter-h2').addClass('animated zoomIn delay-.3s');
-}
-if ($('.inter-p').isInViewport()) {
-  $('.inter-p').addClass('animated bounceInLeft delay-.5s');
-}
-if ($('.gitwu').isInViewport()) {
-  $('.gitwu').addClass('animated jackInTheBox delay-.8s');
-}
-if ($('.map-container').isInViewport()) {
-  $('.map-container').addClass('animated fadeIn');
+  $('.s-icons2').addClass('animated fadeInUp-.8s');
 }
 if ($('.connect-p').isInViewport()) {
   $('.connect-p').addClass('animated pulse');
