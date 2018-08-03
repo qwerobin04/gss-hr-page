@@ -125,12 +125,14 @@ $(document).ready(function(){
   $(window).scroll(function(){
     var sticky = $('#nav-cont'),
       scroll = $(window).scrollTop();
-
+// console.log(scroll);
     if (scroll >= stickyOffset){
       sticky.addClass('sticky');
+      $(".pre-container").css("padding-top","10vh");
     }
     else {
       sticky.removeClass('sticky');
+      $(".pre-container").css("padding-top","0");
     }
 
 });
@@ -148,7 +150,7 @@ $(document).ready(function(){
 
         if (target.length) {
           $('html,body').stop().animate({
-            scrollTop: target.offset().top - 0//offsets for fixed header
+            scrollTop: target.offset().top - 90//offsets for fixed header
           }, 'linear');
         }
       }
@@ -159,7 +161,84 @@ $(document).ready(function(){
   $(document).ready(function(){
     $(".hamburger").click(function(){
         $(".burger-nav").toggleClass("reveal");
-        $(".overlay").toggleClass("reveal");
-        setTimeout
+        setTimeout(function(){
+          $(".overlay").toggleClass("reveal");
+        }, 100);
     });
   });
+
+  // VIEW PORT ANIMATIONS
+  $.fn.isInViewport = function() {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
+
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+$(window).on('resize scroll', function() {
+if ($('.h-wwaat').isInViewport()) {
+  $('.h-wwaat').addClass('animated fadeInLeft');
+}
+
+if ($('.h-content1').isInViewport()) {
+  $('.h-content1').addClass('animated fadeInRight');
+}
+if ($('.gallery-container').isInViewport()) {
+  $('.gallery-container').addClass('animated fadeInUp delay-.5s');
+}
+if ($('.eb').isInViewport()) {
+  $('.eb').addClass('animated fadeInLeft');
+}
+if ($('.eb-icons').isInViewport()) {
+  $('.eb-icons').addClass('animated fadeInUp delay-.5s');
+}
+if ($('.tech-title').isInViewport()) {
+  $('.tech-title').addClass('animated fadeInLeft');
+}
+if ($('.tech-text').isInViewport()) {
+  $('.tech-text').addClass('animated fadeInRight');
+}
+if ($('.tech-img').isInViewport()) {
+  $('.tech-img').addClass('animated rotateIn delay-.5s');
+}
+if ($('.car-path-title').isInViewport()) {
+  $('.car-path-title').addClass('animated fadeInLeft');
+}
+if ($('.car-path-menu').isInViewport()) {
+  $('.car-path-menu').addClass('animated flipInY delay-.4s');
+}
+if ($('.cp-slider').isInViewport()) {
+  $('.cp-slider').addClass('animated fadeInUp delay-.8s');
+}
+if ($('.serv-h2').isInViewport()) {
+  $('.serv-h2').addClass('animated fadeInLeft');
+}
+if ($('.serv-p').isInViewport()) {
+  $('.serv-p').addClass('animated fadeInRight');
+}
+if ($('.s-icons1').isInViewport()) {
+  $('.s-icons1').addClass('animated flipInY delay-8s');
+}
+if ($('.s-icons2').isInViewport()) {
+  $('.s-icons2').addClass('animated flipInY delay-.8s');
+}
+if ($('.inter-h2').isInViewport()) {
+  $('.inter-h2').addClass('animated zoomIn delay-.3s');
+}
+if ($('.inter-p').isInViewport()) {
+  $('.inter-p').addClass('animated bounceInLeft delay-.5s');
+}
+if ($('.gitwu').isInViewport()) {
+  $('.gitwu').addClass('animated jackInTheBox delay-.8s');
+}
+if ($('.map-container').isInViewport()) {
+  $('.map-container').addClass('animated fadeIn');
+}
+if ($('.connect-p').isInViewport()) {
+  $('.connect-p').addClass('animated pulse');
+}
+
+});
