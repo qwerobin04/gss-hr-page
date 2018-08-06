@@ -742,8 +742,13 @@ p.serv-p {
   cursor: pointer;
 }
 
+.gss-ph-iframe {
+  margin-bottom: -4px;
+}
+
 .gss-jp-iframe {
   display: block;
+  margin-bottom: -4px;
 }
 
 .show {
