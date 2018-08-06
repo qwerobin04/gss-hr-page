@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+  // $('.directions-card-medium-large').addClass("hide");
   //ANCHOR
   $("a").on('click', function(event) {
 
@@ -192,13 +192,13 @@ if ($('.h-content1').isInViewport()) {
   $('.h-content1').addClass('animated fadeInUp');
 }
 if ($('.gallery-container').isInViewport()) {
-  $('.gallery-container').addClass('animated fadeInUp delay-.5s');
+  $('.gallery-container').addClass('animated fadeInUp ');
 }
 if ($('.eb').isInViewport()) {
   $('.eb').addClass('animated fadeInUp');
 }
 if ($('.eb-icons').isInViewport()) {
-  $('.eb-icons').addClass('animated fadeInUp delay-.5s');
+  $('.eb-icons').addClass('animated fadeInUp');
 }
 if ($('.tech-title').isInViewport()) {
   $('.tech-title').addClass('animated fadeInUp');
@@ -207,10 +207,10 @@ if ($('.tech-text').isInViewport()) {
   $('.tech-text').addClass('animated fadeInUp');
 }
 if ($('.tech-img').isInViewport()) {
-  $('.tech-img').addClass('animated fadeInUp delay-.5s');
+  $('.tech-img').addClass('animated fadeInUp');
 }
 if ($('.cp-slider').isInViewport()) {
-  $('.cp-slider').addClass('animated fadeInUp delay-.8s');
+  $('.cp-slider').addClass('animated fadeInUp');
 }
 if ($('.serv-h2').isInViewport()) {
   $('.serv-h2').addClass('animated fadeInUp');
@@ -219,10 +219,10 @@ if ($('.serv-p').isInViewport()) {
   $('.serv-p').addClass('animated fadeInUp');
 }
 if ($('.s-icons1').isInViewport()) {
-  $('.s-icons1').addClass('animated fadeInUp delay-8s');
+  $('.s-icons1').addClass('animated fadeInUp');
 }
 if ($('.s-icons2').isInViewport()) {
-  $('.s-icons2').addClass('animated fadeInUp-.8s');
+  $('.s-icons2').addClass('animated fadeInUp');
 }
 if ($('.connect-p').isInViewport()) {
   $('.connect-p').addClass('animated pulse');

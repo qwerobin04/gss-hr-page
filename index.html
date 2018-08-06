@@ -30,7 +30,7 @@
         <!-- /.b-topWrapper -->
         <div class="b-bottomWrapper">
           <div class="banner-bottom section">
-            <video class="video-bg" source type="video/mp4 " src="img/banner.mp4 " playsinline autoplay loop muted="muted ">
+            <video class="video-bg" source type="video/mp4 " src="img/banner.mp4 " webkit-playsinline="true" playsinline="true" autoplay loop muted="muted ">
             </video>
             <!-- /.video-bg -->
           </div>
@@ -859,10 +859,10 @@
   <script>
     // ===== Scroll to Top ====
     $(window).scroll(function() {
-      if ($(this).scrollTop() >= 400) { // If page is scrolled more than 650px
+      if ($(this).scrollTop() >= 4100) { // If page is scrolled more than 650px
         $('.rocket').fadeIn(400); // Fade in the arrow
       } else {
-        $('.rocket').fadeOut(500); // Else fade out the arrow
+        $('.rocket').fadeOut(400); // Else fade out the arrow
       }
     });
     $('#return-to-top').click(function() { // When arrow is clicked
@@ -872,8 +872,21 @@
     });
   </script>
   <!-- //ROCKET SCROLL -->
+  <!-- <script>
+    var map;
 
-
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {
+          lat: -34.397,
+          lng: 150.644
+        },
+        zoom: 8
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRdRDqqJqPj1YCFIdCOD8V_5Awukw2LDI&callback=initMap" async defer></script>
+ -->
 
 </body>
 

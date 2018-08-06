@@ -222,8 +222,12 @@ video {
   text-align: center;
 }
 
+#mapDiv .gm-style .directions-card-medium-large {
+display: none !important;
+}
+
 .h-content1 a {
-  color: #0000ff;
+  color: #e65c00;
 }
 
 /*IMAGE GALLERY STARTS HERE*/
@@ -231,6 +235,7 @@ video {
 .gallery-container {
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .gallery-wrapper {
@@ -310,6 +315,7 @@ video {
 .eb-container {
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 
 .eb-wrapper {
@@ -354,13 +360,15 @@ video {
 }
 
 /* TECHNOLOGIES STARTS HERE */
+.tech-container {
+  overflow: hidden;
+}
 
 .tech {
   position: relative;
   width: 100%;
   background-image: url("/img/technologiesBg.png");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
   background-size: cover;
 }
@@ -406,6 +414,7 @@ p.tech-text {
 .cp-container {
   width: 100%;
   background-color: #f5f5f5;
+  overflow: hidden;
 }
 
 .cp-wrapper {
@@ -688,6 +697,14 @@ p.serv-p {
   width: 100%;
 }
 
+  /* Always set the map height explicitly to define the size of the div
+   * element that contains the map. */
+  #map {
+    width: 100%;
+    height: 250px;
+    border: 0;
+  }
+
 .gss-map-link {
   position: absolute;
   display: flex;
@@ -806,12 +823,11 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   position: fixed;
   bottom: 60px;
   right: 20px;
-  display: flex;
-  justify-content: center;
   animation: rocket 3s infinite;
   -webkit-transition: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
   transition: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  z-index: 3;
+  z-index: 1;
+  display: none;
 }
 
 @keyframes rocket {
