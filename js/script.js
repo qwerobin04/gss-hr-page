@@ -167,6 +167,11 @@ $(document).ready(function(){
     });
   });
 
+  //VIDEO TAG
+  $(document).ready(function(){
+
+  });
+
   // VIEW PORT ANIMATIONS
   $.fn.isInViewport = function() {
   var elementTop = $(this).offset().top;
