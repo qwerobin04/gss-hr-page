@@ -189,37 +189,43 @@ if ($('.h-wwaat').isInViewport()) {
 }
 
 if ($('.h-content1').isInViewport()) {
-  $('.h-content1').addClass('animated fadeInUp');
+  $('.h-content1').addClass('animated fadeInUp delay-1s');
 }
 if ($('.gallery-container').isInViewport()) {
-  $('.gallery-container').addClass('animated fadeInUp ');
+  $('.gallery-container').addClass('animated fadeInUp delay-2s');
 }
 if ($('.eb').isInViewport()) {
   $('.eb').addClass('animated fadeInUp');
 }
 if ($('.eb-icons').isInViewport()) {
-  $('.eb-icons').addClass('animated fadeInUp');
+  $('.eb-icons').addClass('animated fadeInUp delay-1s');
 }
 if ($('.tech-title').isInViewport()) {
   $('.tech-title').addClass('animated fadeInUp');
 }
 if ($('.tech-text').isInViewport()) {
-  $('.tech-text').addClass('animated fadeInUp');
+  $('.tech-text').addClass('animated fadeInUp delay-1s');
 }
 if ($('.tech-img').isInViewport()) {
-  $('.tech-img').addClass('animated fadeInUp');
+  $('.tech-img').addClass('animated fadeInUp delay-2s');
+}
+if ($('.car-path-title').isInViewport()) {
+  $('.car-path-title').addClass('animated fadeInUp');
+}
+if ($('.car-path-menu').isInViewport()) {
+  $('.car-path-menu').addClass('animated fadeInUp delay-1s');
 }
 if ($('.cp-slider').isInViewport()) {
-  $('.cp-slider').addClass('animated fadeInUp');
+  $('.cp-slider').addClass('animated fadeInUp delay-2s');
 }
 if ($('.serv-h2').isInViewport()) {
   $('.serv-h2').addClass('animated fadeInUp');
 }
 if ($('.serv-p').isInViewport()) {
-  $('.serv-p').addClass('animated fadeInUp');
+  $('.serv-p').addClass('animated fadeInUp delay-1s');
 }
 if ($('.s-icons1').isInViewport()) {
-  $('.s-icons1').addClass('animated fadeInUp');
+  $('.s-icons1').addClass('animated fadeInUp delay-2s');
 }
 if ($('.s-icons2').isInViewport()) {
   $('.s-icons2').addClass('animated fadeInUp');
