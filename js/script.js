@@ -221,12 +221,6 @@ if ($('.tech-title').isInViewport()) {
     }, 300 );
   $('.tech-title').addClass('animated fadeInUp');
 }
-if ($('.tech-text').isInViewport()) {
-  $( ".tech-text" ).animate({
-    opacity: [1]
-    }, 300 );
-  $('.tech-text').addClass('animated fadeInUp');
-}
 if ($('.tech-icons').isInViewport()) {
   $( ".tech-icons" ).animate({
     opacity: [1]

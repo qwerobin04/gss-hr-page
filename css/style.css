@@ -998,6 +998,10 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   .burger-nav ul li a {
     font-size: 1rem;
   }
+  .eb-img-container + div {
+    text-align: left;
+    margin-right: 50px;
+}
 
 }
 
@@ -1234,6 +1238,17 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   .underline{
     text-decoration: underline;
   }
+  .eb-icons {
+    grid-template-columns: 1fr;
+  }
+
+  .eb-items {
+    grid-template-columns: 1fr 1fr;
+  }
+  .eb-img-container + div {
+    text-align: justify;
+    margin-right: 100px;
+}
 
 
 }
@@ -1397,14 +1412,6 @@ background: linear-gradient(to right, #F9D423, #e65c00);
     margin: 0;
   }
 
-  .eb-icons {
-    grid-template-columns: 1fr;
-  }
-
-  .eb-items {
-    grid-template-columns: 1fr 1fr;
-  }
-
   .burger-nav ul li a {
     font-size: 10px;
     margin-left: 10px;
@@ -1434,6 +1441,10 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   .connect-p {
     margin-left: 20px;
   }
+  .eb-img-container + div {
+    text-align: justify;
+    margin-right: 50px;
+}
 
 }
 
