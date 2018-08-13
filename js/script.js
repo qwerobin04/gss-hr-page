@@ -243,7 +243,7 @@ if ($('.cp-slider').isInViewport()) {
   $( ".cp-slider" ).animate({
     opacity: [1]
     }, 300 );
-  $('.cp-slider').addClass('animated fadeInUp');
+  $('.cp-slider').addClass('animated fadeIn');
 }
 if ($('.serv-h2').isInViewport()) {
   $( ".serv-h2" ).animate({
