@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Montserrat", "sans-serif", "arial";
+  font-family: "Montserrat", "sans-serif", "Droid Serif", "arial";
   font-size: 16px;
   color: #000;
 }
@@ -634,9 +634,8 @@ p.serv-p {
   height: 215px;
   width: 28%;
   padding-top: 50px;
-  background: linear-gradient(white, #dfdfdf);
+  border: 1px solid #0000003b;
   border-radius: 7px;
-  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 50px;
   opacity: 0;
 }
@@ -645,9 +644,8 @@ p.serv-p {
   height: 215px;
   width: 28%;
   padding-top: 50px;
-  background: linear-gradient(white, #dfdfdf);
+  border: 1px solid #0000003b;
   border-radius: 7px;
-  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 50px;
   opacity: 0;
 }
