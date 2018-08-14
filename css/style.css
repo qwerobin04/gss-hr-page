@@ -182,7 +182,7 @@ video {
     text-decoration: none;
     color: #000;
     font-size: 15px;
-    font-weight: 550;
+    font-weight: 500;
     padding: 5px;
     text-align: center;
 }
@@ -640,7 +640,7 @@ p.tech-text {
 }
 
 h2.serv-title {
-  margin-top: 85px;
+  margin-top: 60px;
   margin-bottom: 15px;
   font-family: "montserrat";
   font-weight: 700;
@@ -683,6 +683,9 @@ h2.serv-title {
   transform: translateY(-50%);
 }
 
+.right-block p {
+  line-height: 2;
+}
 
 
 /* INTERESTED STARTS HERE */
@@ -698,7 +701,7 @@ h2.serv-title {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .interested {
@@ -1227,7 +1230,7 @@ background: linear-gradient(to right, #F9D423, #e65c00);
 
   .overlay {
   position: absolute;
-  background: #000000ad;
+  background: #0000ad;
   left: 0;
   right: 0;
   top: 0;
@@ -1541,15 +1544,7 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   }
 
 }
-<<<<<<< HEAD
 
-
-
-=======
-
-
-
->>>>>>> 53a53a2967a9cf86078739f2bf56a1ca4cf853d8
 @media screen and (max-width: 360px) {
     .team-container {
         width: 100vw;
