@@ -12,6 +12,11 @@ body {
   line-height: 1.5;
 }
 
+.team-container {
+    width: 100vw;
+}
+
+
 .clearfix {
   clear: both;
 }
@@ -958,10 +963,14 @@ background: linear-gradient(to right, #F9D423, #e65c00);
 
 
 @media screen and (max-width: 1024px) {
+
   .inter-h2 {
     text-transform: uppercase;
     font-size: 50px;
     font-weight: 700;
+  }
+  .team-container {
+      width: 100vw;
   }
   .inter-p {
     font-size: 24px;
@@ -1033,6 +1042,9 @@ background: linear-gradient(to right, #F9D423, #e65c00);
 }
 
 @media screen and (max-width: 768px) {
+    .team-container {
+        width: 100vw;
+    }
   .logo-wh {
     width: 140px;
     height: auto;
@@ -1476,6 +1488,9 @@ background: linear-gradient(to right, #F9D423, #e65c00);
 }
 
 @media screen and (max-width: 450px) {
+    .team-container {
+        width: 100vw;
+    }
   .cp-content {
     height: 360px;
   }
@@ -1510,7 +1525,11 @@ background: linear-gradient(to right, #F9D423, #e65c00);
 
 
 }
-
+@media screen and (max-width: 411px) {
+    .team-container {
+        width: 100vw;
+    }
+}
 @media screen and (max-width: 375px) {
 
   .tech-icons .tech-img {
@@ -1518,15 +1537,38 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   height: 50px;
 }
 
+.team-container {
+    width: 100vw;
+}
+
   .b-arrow {
     left: 45%;
   }
 
+}
 
+
+
+@media screen and (max-width: 360px) {
+    .team-container {
+        width: 100vw;
+    }
 }
 
 @media screen and (max-width: 350px) {
   .cp-content {
       height: 400px;
   }
+
+  .team-container {
+      width: 100vw;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  .team-container {
+      width: 100vw;
+  }
+
 }

@@ -75,11 +75,33 @@ $(document).ready(function(){
   });
 
     $('.slider-nav').slick({
-     slidesToShow: 4,
-     slidesToScroll: 1,
-     speed: 300,
      dots: false,
-     focusOnSelect: true
+     focusOnSelect: true,
+     autoplay: true,
+     autoplaySpeed: 4000,
+     centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
     });
 
     // CAREER PATH - SLIDER
@@ -122,20 +144,19 @@ $(document).ready(function(){
 
   // STICKY NAV BAR
 
-  $(window).scroll(function(){
-    var sticky = $('#nav-cont'),
-      scroll = $(window).scrollTop();
-// console.log(scroll);
-    if (scroll >= stickyOffset){
-      sticky.addClass('sticky');
-      $(".pre-container").css("padding-top","10vh");
-    }
-    else {
-      sticky.removeClass('sticky');
-      $(".pre-container").css("padding-top","0");
-    }
-
-});
+//   $(window).scroll(function(){
+//     var sticky = $('#nav-cont'),
+//       scroll = $(window).scrollTop();
+// // console.log(scroll);
+//     if (scroll >= stickyOffset){
+//       sticky.addClass('sticky');
+//       $(".pre-container").css("padding-top","10vh");
+//     }
+//     else {
+//       sticky.removeClass('sticky');
+//       $(".pre-container").css("padding-top","0");
+//     }
+// });
 
  var stickyOffset = $('#nav-cont').offset().top;
 
