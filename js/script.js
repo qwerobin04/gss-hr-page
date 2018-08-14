@@ -75,11 +75,33 @@ $(document).ready(function(){
   });
 
     $('.slider-nav').slick({
-     slidesToShow: 4,
-     slidesToScroll: 1,
-     speed: 300,
      dots: false,
-     focusOnSelect: true
+     focusOnSelect: true,
+     autoplay: true,
+     autoplaySpeed: 4000,
+     centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
     });
 
     // CAREER PATH - SLIDER
@@ -122,20 +144,19 @@ $(document).ready(function(){
 
   // STICKY NAV BAR
 
-  $(window).scroll(function(){
-    var sticky = $('#nav-cont'),
-      scroll = $(window).scrollTop();
-// console.log(scroll);
-    if (scroll >= stickyOffset){
-      sticky.addClass('sticky');
-      $(".pre-container").css("padding-top","10vh");
-    }
-    else {
-      sticky.removeClass('sticky');
-      $(".pre-container").css("padding-top","0");
-    }
-
-});
+//   $(window).scroll(function(){
+//     var sticky = $('#nav-cont'),
+//       scroll = $(window).scrollTop();
+// // console.log(scroll);
+//     if (scroll >= stickyOffset){
+//       sticky.addClass('sticky');
+//       $(".pre-container").css("padding-top","10vh");
+//     }
+//     else {
+//       sticky.removeClass('sticky');
+//       $(".pre-container").css("padding-top","0");
+//     }
+// });
 
  var stickyOffset = $('#nav-cont').offset().top;
 
@@ -245,30 +266,30 @@ if ($('.cp-slider').isInViewport()) {
     }, 300 );
   $('.cp-slider').addClass('animated fadeIn');
 }
-if ($('.serv-h2').isInViewport()) {
-  $( ".serv-h2" ).animate({
-    opacity: [1]
-    }, 300 );
-  $('.serv-h2').addClass('animated fadeInUp');
-}
-if ($('.serv-p').isInViewport()) {
-  $( ".serv-p" ).animate({
-    opacity: [1]
-    }, 300 );
-  $('.serv-p').addClass('animated fadeInUp');
-}
-if ($('.s-icons1').isInViewport()) {
-  $( ".s-icons1" ).animate({
-    opacity: [1]
-    }, 300 );
-  $('.s-icons1').addClass('animated fadeInUp');
-}
-if ($('.s-icons2').isInViewport()) {
-  $( ".s-icons2" ).animate({
-    opacity: [1]
-    }, 300 );
-  $('.s-icons2').addClass('animated fadeInUp');
-}
+// if ($('.serv-h2').isInViewport()) {
+//   $( ".serv-h2" ).animate({
+//     opacity: [1]
+//     }, 300 );
+//   $('.serv-h2').addClass('animated fadeInUp');
+// }
+// if ($('.serv-p').isInViewport()) {
+//   $( ".serv-p" ).animate({
+//     opacity: [1]
+//     }, 300 );
+//   $('.serv-p').addClass('animated fadeInUp');
+// }
+// if ($('.s-icons1').isInViewport()) {
+//   $( ".s-icons1" ).animate({
+//     opacity: [1]
+//     }, 300 );
+//   $('.s-icons1').addClass('animated fadeInUp');
+// }
+// if ($('.s-icons2').isInViewport()) {
+//   $( ".s-icons2" ).animate({
+//     opacity: [1]
+//     }, 300 );
+//   $('.s-icons2').addClass('animated fadeInUp');
+// }
 if ($('.connect-p').isInViewport()) {
   $('.connect-p').addClass('animated pulse');
 }

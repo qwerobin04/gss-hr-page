@@ -6,11 +6,16 @@
 }
 
 body {
-  font-family:  "arial", "sans-serif";
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   color: #444;
   line-height: 1.5;
 }
+
+.team-container {
+    width: 100vw;
+}
+
 
 .clearfix {
   clear: both;
@@ -602,88 +607,83 @@ p.tech-text {
 }
 
 /* SERVICES STARTS HERE*/
-
-.serv-wrapper {
+.serv-container {
   position: relative;
   width: 100%;
+  height: 100vh
 }
-
-.serv-title-wrapper {
+.serv-wrapper {
   max-width: 1110px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 50px;
 }
 
-h2.serv-h2 {
-  font-family: 'montserrat';
-  font-size: 3.3rem;
+.left-block,
+.left-block img {
+  position: relative;
+}
+
+.left-block::before {
+  content: "";
+  height: 650px;
+  width: 900px;
+  position: absolute;
+  top: 0;
+  left: -500px;
+  background: #e8f9fe;
+}
+
+.left-block img {
+  margin-top: 60px;
+}
+
+h2.serv-title {
+  margin-top: 85px;
+  margin-bottom: 15px;
+  font-family: "montserrat";
   font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 50px 50px 0;
-  opacity: 0;
+  font-size: 36px;
   color: #000;
 }
 
-p.serv-p {
-  margin: 50px 50px;
-  font-size: 18px;
-  text-align: center;
-  opacity: 0;
+.right-block_list {
+  list-style-type: none;
+  margin-top: 20px;
 }
 
-.serv-icons-wrapper {
-  max-width: 1110px;
-  margin: 0 auto;
+.right-block ul li {
+  height: 88px;
+  position: relative;
 }
 
-.serv-icons1 {
-  display: flex;
-  text-align: center;
-  justify-content: space-around;
+.right-block ul li::before {
+  content: "";
+  height: 1px;
+  width: 86%;
+  background: #000;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
-.serv-icons2 {
-  max-width: 1110px;
-  margin: 0 auto;
-  display: flex;
-  text-align: center;
-  justify-content: center;
+.right-block ul li img,
+.right-block ul li span {
+  position: absolute;
+}
+.right-block ul li img {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.s-icons1 {
-  height: 215px;
-  width: 28%;
-  padding-top: 50px;
-  border: 1px solid #0000003b;
-  border-radius: 7px;
-  margin-bottom: 50px;
-  opacity: 0;
+.right-block ul li span {
+  top: 50%;
+  left: 80px;
+  transform: translateY(-50%);
 }
 
-.s-icons2 {
-  height: 215px;
-  width: 28%;
-  padding-top: 50px;
-  border: 1px solid #0000003b;
-  border-radius: 7px;
-  margin-bottom: 50px;
-  opacity: 0;
-}
 
-.s-icons2:first-child {
-  margin-right: 70px;
-}
-
-.s-img {
-  height: 120px;
-  width: auto;
-}
-
-.s-p {
-  font-size: 16px;
-  font-weight: 600;
-  margin-top: 15px;
-}
 
 /* INTERESTED STARTS HERE */
 
@@ -958,10 +958,14 @@ background: linear-gradient(to right, #F9D423, #e65c00);
 
 
 @media screen and (max-width: 1024px) {
+
   .inter-h2 {
     text-transform: uppercase;
     font-size: 50px;
     font-weight: 700;
+  }
+  .team-container {
+      width: 100vw;
   }
   .inter-p {
     font-size: 24px;
@@ -1033,6 +1037,9 @@ background: linear-gradient(to right, #F9D423, #e65c00);
 }
 
 @media screen and (max-width: 768px) {
+    .team-container {
+        width: 100vw;
+    }
   .logo-wh {
     width: 140px;
     height: auto;
@@ -1476,6 +1483,9 @@ background: linear-gradient(to right, #F9D423, #e65c00);
 }
 
 @media screen and (max-width: 450px) {
+    .team-container {
+        width: 100vw;
+    }
   .cp-content {
     height: 360px;
   }
@@ -1510,7 +1520,11 @@ background: linear-gradient(to right, #F9D423, #e65c00);
 
 
 }
-
+@media screen and (max-width: 411px) {
+    .team-container {
+        width: 100vw;
+    }
+}
 @media screen and (max-width: 375px) {
 
   .tech-icons .tech-img {
@@ -1518,15 +1532,38 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   height: 50px;
 }
 
+.team-container {
+    width: 100vw;
+}
+
   .b-arrow {
     left: 45%;
   }
 
+}
 
+
+
+@media screen and (max-width: 360px) {
+    .team-container {
+        width: 100vw;
+    }
 }
 
 @media screen and (max-width: 350px) {
   .cp-content {
       height: 400px;
   }
+
+  .team-container {
+      width: 100vw;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  .team-container {
+      width: 100vw;
+  }
+
 }
