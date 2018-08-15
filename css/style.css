@@ -338,60 +338,96 @@ video {
 
 /* EMPLOYEE BENEFITS STARTS HERE */
 
-.eb-container {
+.ep-container {
   position: relative;
   width: 100%;
-  overflow: hidden;
+  height: 100vh;
 }
 
-.eb-wrapper {
+.ep-wrapper {
   max-width: 1110px;
   margin: 0 auto;
-  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
 }
-
-.eb {
-  font-size: 3.3rem;
+.left-block_e-perks{
+  width: 45%;
+}
+.right-block_e-perks{
+  width: 50%;
+}
+h2.title_e-perks {
+  margin-top: 38px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  font-family: "montserrat";
   font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 50px 20px 0;
-  opacity: 0;
-  color: #000;
-  font-family: 'montserrat';
-}
-
-.eb-h4 {
+  font-size: 36px;
   color: #000;
 }
-
-.eb-icons {
+.list_e-perks {
+  list-style-type: none;
+}
+.left-block_e-perks ul li {
+  height: 88px;
+  margin-left: 20px;
+  margin-bottom: 30px;
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-row-gap: 20px;
-  width: 100%;
-  margin-top: 50px;
-  opacity: 0;
-}
-.eb-items {
-  display: grid;
-  grid-template-columns: .8fr 1.2fr;
-  text-align: center;
-}
-.eb-img-container + div {
-    text-align: left;
 }
 
-.eb-items p {
-  font-size: 1rem;
+.left-block_e-perks ul li img,
+.left-block_e-perks ul li span,
+.left-block_e-perks ul li p {
+  position: absolute;
+}
+.left-block_e-perks ul li img {
+  top: 0;
 }
 
-.eb-img-container {
-  height: auto;
-  display: block;
-  text-align: center;
+.left-block_e-perks ul li span {
+  top: -5px;
+  left: 80px;
+  font-weight: bold;
+  color: #000;
+  letter-spacing: 1px;
 }
+
+.left-block_e-perks ul li p {
+  top: 20px;
+  left: 80px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.right-block_e-perks {
+  position: relative;
+}
+.right-block_e-perks::before {
+  content: "";
+  height: 445px;
+  width: 490px;
+  position: absolute;
+  top: 100px;
+  right: 10px;
+  background: #fff8e0;
+}
+.right-block_e-perks img {
+  position: absolute;
+}
+.right-block_e-perks img:first-child {
+  top: 10px;
+  right: 30px;
+}
+.right-block_e-perks img:nth-child(2n) {
+  top: 185px;
+  right: 240px;
+}
+.right-block_e-perks img:last-child {
+  top: 280px;
+  right: 0;
+}
+
+
 
 /* TECHNOLOGIES STARTS HERE */
 .tech-container {
@@ -628,7 +664,7 @@ p.tech-text {
 .left-block::before {
   content: "";
   height: 650px;
-  width: 900px;
+  width: 850px;
   position: absolute;
   top: 0;
   left: -500px;
@@ -637,6 +673,7 @@ p.tech-text {
 
 .left-block img {
   margin-top: 60px;
+  width: 100%;
 }
 
 h2.serv-title {
@@ -1032,10 +1069,6 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   .burger-nav ul li a {
     font-size: 1rem;
   }
-  .eb-img-container + div {
-    text-align: left;
-    margin-right: 50px;
-}
 
 }
 
@@ -1130,12 +1163,6 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   .cp-container .slick-slide img {
     margin: 0 auto;
     max-width: 65%;
-  }
-  .eb {
-    font-size: 32px;
-  }
-  .eb-items p {
-    font-size: 12px;
   }
   h2.serv-h2 {
     font-size: 32px;
@@ -1275,17 +1302,6 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   .underline{
     text-decoration: underline;
   }
-  .eb-icons {
-    grid-template-columns: 1fr;
-  }
-
-  .eb-items {
-    grid-template-columns: 1fr 1fr;
-  }
-  .eb-img-container + div {
-    text-align: justify;
-    margin-right: 100px;
-}
 
 
 }
@@ -1335,32 +1351,6 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   p.tech-text {
     text-align: justify;
     margin: 30px;
-  }
-
-  .serv-icons1 {
-    flex-direction: column;
-    max-width: 1110px;
-    margin: 0 auto;
-  }
-
-  .s-icons1 {
-    width: 60%;
-    margin: 0 auto 50px;
-  }
-
-  .serv-icons2 {
-    flex-direction: column;
-    max-width: 1110px;
-    margin: 0 auto;
-  }
-
-  .s-icons2 {
-    width: 60%;
-    margin: 0 auto 50px;
-  }
-
-  .s-icons2:first-child {
-    margin-right: auto;
   }
 
   .lightbox .lb-image {
@@ -1478,10 +1468,6 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   .connect-p {
     margin-left: 20px;
   }
-  .eb-img-container + div {
-    text-align: justify;
-    margin-right: 50px;
-}
 
 }
 

@@ -224,18 +224,18 @@ if ($('.gallery-container').isInViewport()) {
     }, 300 );
   $('.gallery-container').addClass('animated fadeInUp');
 }
-if ($('.eb').isInViewport()) {
-  $( ".eb" ).animate({
-    opacity: [1]
-    }, 300 );
-  $('.eb').addClass('animated fadeInUp');
-}
-if ($('.eb-icons').isInViewport()) {
-  $( ".eb-icons" ).animate({
-    opacity: [1]
-    }, 300 );
-  $('.eb-icons').addClass('animated fadeInUp');
-}
+// if ($('.eb').isInViewport()) {
+//   $( ".eb" ).animate({
+//     opacity: [1]
+//     }, 300 );
+//   $('.eb').addClass('animated fadeInUp');
+// }
+// if ($('.eb-icons').isInViewport()) {
+//   $( ".eb-icons" ).animate({
+//     opacity: [1]
+//     }, 300 );
+//   $('.eb-icons').addClass('animated fadeInUp');
+// }
 if ($('.tech-title').isInViewport()) {
   $( ".tech-title" ).animate({
     opacity: [1]
