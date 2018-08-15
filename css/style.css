@@ -596,7 +596,7 @@ h2.title_cp {
 }
 
 h2.serv-title {
-  margin-top: 60px;
+  margin-top: 50px;
   margin-bottom: 15px;
   font-family: "montserrat";
   font-weight: 700;
@@ -1172,7 +1172,7 @@ background: linear-gradient(to right, #F9D423, #e65c00);
 
   .overlay {
   position: absolute;
-  background: #0000ad;
+  background: rgba(0,0,0,0.5);
   left: 0;
   right: 0;
   top: 0;
