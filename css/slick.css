@@ -118,9 +118,3 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
-.slider.slick-slide {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 0;
-}

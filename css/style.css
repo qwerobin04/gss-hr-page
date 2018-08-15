@@ -234,7 +234,7 @@ video {
 
 .h-wwaat {
   font-family: 'montserrat';
-  font-size: 3.3rem;
+  font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0 30px;
@@ -297,7 +297,8 @@ video {
 }
 
 .slick-prev {
-  left: 10px;
+  top: 50%;
+  left: -40px;
   background-image: url(/img/prev.png);
   background-repeat: no-repeat;
   cursor: pointer;
@@ -306,7 +307,8 @@ video {
 }
 
 .slick-next {
-  right: 10px;
+  top: 50%;
+  right: -35px;
   background-image: url(/img/next.png);
   background-repeat: no-repeat;
   cursor: pointer;
@@ -362,7 +364,7 @@ h2.title_e-perks {
   margin-left: 20px;
   font-family: "montserrat";
   font-weight: 700;
-  font-size: 36px;
+  font-size: 3rem;
   color: #000;
 }
 .list_e-perks {
@@ -423,7 +425,7 @@ h2.title_e-perks {
   right: 240px;
 }
 .right-block_e-perks img:last-child {
-  top: 280px;
+  top: 315px;
   right: 0;
 }
 
@@ -487,159 +489,73 @@ p.tech-text {
 
 .cp-container {
   width: 100%;
-  background-color: #f5f5f5;
+  height: 100vh;
+  background-color: #fff;
   overflow: hidden;
 }
 
 .cp-wrapper {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-.car-path-nav {
-  position: relative;
-  padding-top: 50px;
-}
-
-.car-path-menu {
   max-width: 1110px;
-  margin: 0 auto;
+  margin: 80px auto;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding-bottom: 50px;
-  opacity: 0;
-}
-
-.car-path-title {
-  text-align: center;
-  margin-bottom: 50px;
-  opacity: 0;
-}
-
-.cp-h2 {
-  text-transform: uppercase;
-  font-size: 3.3rem;
-  font-weight: 700;
-  font-family: 'montserrat';
-  color: #000;
-}
-
-.cp-nav-link.is-active {
-  position: relative;
-  background: #f5f5f5;
-  border: 4px solid #000;
-  border-radius: 2px;
-  padding: 6px;
-  box-sizing: border-box;
-  color: #000;
-}
-
-.cp-nav-link.is-active:before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  border: 20px solid transparent;
-  border-top-color: #000;
-  border-bottom: 0;
-  margin-left: -20px;
-  margin-bottom: -20px;
-}
-
-.cp-nav-link.is-active:after {
-  content: '';
-  position: absolute;
-  bottom: 6px;
-  left: 50%;
-  border: 20px solid transparent;
-  border-top-color: #f5f5f5;
-  border-bottom: 0;
-  margin-left: -20px;
-  margin-bottom: -20px;
-}
-
-.cp-nav-link {
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.slider {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+    position: relative;
 }
 
 .slider-container_1 {
-  max-width: 1110px;
-  margin: 0 auto;
-  position: relative;
+  width: 100%;
+  margin-top: -64px;
 }
-
-.slider-container_2 {
-  max-width: 1110px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.slider-container_3 {
-  max-width: 1110px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.slider-container_4 {
-  max-width: 1110px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.slider-img {
-  width: 50%;
-  vertical-align: middle;
-}
-
 .content-container {
-  width: 45%;
+  width: 100%;
   vertical-align: middle;
 }
 
 .cp-content {
-  padding: 35px 60px 100px;
-  background-color: #e6e6e6;
+  padding: 35px 30px;
+  background-color: #fff;
   box-sizing: border-box;
-  width: 100%;
   height: 420px;
 }
 
 .cp-content-title {
-  text-align: center;
   font-size: 1.8rem;
   color: #000;
-}
-
-.cp-content-text1 {
-  text-align: center;
-  font-size: 20px;
-    color: #000;
 }
 
 .cp-content-text2 {
   text-align: justify;
   font-size: 16px;
   margin-top: 20px;
-    color: #000;
+  line-height: 2;
 }
 
-.cp-slider {
-  display: none;
-  opacity: 0;
+.left-block_cp {
+  width: 50%;
+  position: relative;
+}
+.left-block_cp::before {
+  content: "";
+  height: 600px;
+  width: 320px;
+  position: absolute;
+  top: -55px;
+  left: 70px;
+  background: #e1f2dd;
+}
+.left-block_cp img {
+  position: absolute;
+}
+.right-block_cp {
+  width: 50%;
 }
 
-.cp-slider.is-active {
-  display: block;
+h2.title_cp {
+  margin-left: 30px;
+  font-family: "montserrat";
+  font-weight: 700;
+  font-size: 3rem;
+  color: #000;
 }
 
 /* SERVICES STARTS HERE*/
@@ -651,9 +567,8 @@ p.tech-text {
 .serv-wrapper {
   max-width: 1110px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .left-block,
@@ -661,19 +576,23 @@ p.tech-text {
   position: relative;
 }
 
+.left-block {
+  width: 50%;
+}
+
 .left-block::before {
   content: "";
   height: 650px;
-  width: 850px;
+  width: 500px;
   position: absolute;
   top: 0;
-  left: -500px;
+  left: -150px;
   background: #e8f9fe;
 }
 
 .left-block img {
   margin-top: 60px;
-  width: 100%;
+  width: 80%;
 }
 
 h2.serv-title {
@@ -681,8 +600,12 @@ h2.serv-title {
   margin-bottom: 15px;
   font-family: "montserrat";
   font-weight: 700;
-  font-size: 36px;
+  font-size: 3rem;
   color: #000;
+}
+
+.right-block {
+  width: 50%;
 }
 
 .right-block_list {
@@ -721,6 +644,7 @@ h2.serv-title {
 }
 
 .right-block p {
+  text-align: justify;
   line-height: 2;
 }
 
@@ -1089,12 +1013,6 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   .fnoh {
     font-size: 12px;
   }
-  .slider .cp-img {
-    display: none;
-  }
-  .slider .cp-imgSP {
-    display: block;
-  }
   .h-content1 {
     text-align: justify;
     margin: 50px 30px 0;
@@ -1147,11 +1065,8 @@ background: linear-gradient(to right, #F9D423, #e65c00);
     text-align: center;
     margin: 0 10px;
   }
-  .cp-h2 {
-    font-size: 32px;
-  }
   h2.tech-title {
-    font-size: 32px;
+    font-size: 3rem;
     margin-bottom: 0;
   }
   .h-content1 {
@@ -1369,16 +1284,6 @@ background: linear-gradient(to right, #F9D423, #e65c00);
 
   .gss-map-link {
     display: block;
-  }
-
-  .car-path-menu {
-    width: 350px;
-    height: 40px;
-    overflow-x: scroll;
-    white-space: nowrap;
-    margin: 0 auto;
-    padding-bottom: 30px;
-    justify-content: flex-start;
   }
 
   .cp-nav-link {

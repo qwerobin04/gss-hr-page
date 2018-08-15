@@ -22,40 +22,40 @@ $(document).ready(function(){
        });
      } // End if
    });
-
-    $(".cp-nav-text_1").click(function(){
-        $(".cp-nav-link").removeClass("is-active");
-        $(this).addClass("is-active");
-        $(".cp-slider").removeClass("is-active");
-        $(".slider-container_1").addClass("is-active");
-        $(".slider-container_1").get(0).slick.setPosition();
-
-
-    });
-
-    $(".cp-nav-text_2").click(function(){
-        $(".cp-nav-link").removeClass("is-active");
-        $(this).addClass("is-active");
-        $(".cp-slider").removeClass("is-active");
-        $(".slider-container_2").addClass("is-active");
-        $(".slider-container_2").get(0).slick.setPosition();
-    });
-
-    $(".cp-nav-text_3").click(function(){
-        $(".cp-nav-link").removeClass("is-active");
-        $(this).addClass("is-active");
-        $(".cp-slider").removeClass("is-active");
-        $(".slider-container_3").addClass("is-active");
-        $(".slider-container_3").get(0).slick.setPosition();
-    });
-
-    $(".cp-nav-text_4").click(function(){
-        $(".cp-nav-link").removeClass("is-active");
-        $(this).addClass("is-active");
-        $(".cp-slider").removeClass("is-active");
-        $(".slider-container_4").addClass("is-active");
-        $(".slider-container_4").get(0).slick.setPosition();
-    });
+    //
+    // $(".cp-nav-text_1").click(function(){
+    //     $(".cp-nav-link").removeClass("is-active");
+    //     $(this).addClass("is-active");
+    //     $(".cp-slider").removeClass("is-active");
+    //     $(".slider-container_1").addClass("is-active");
+    //     $(".slider-container_1").get(0).slick.setPosition();
+    //
+    //
+    // });
+    //
+    // $(".cp-nav-text_2").click(function(){
+    //     $(".cp-nav-link").removeClass("is-active");
+    //     $(this).addClass("is-active");
+    //     $(".cp-slider").removeClass("is-active");
+    //     $(".slider-container_2").addClass("is-active");
+    //     $(".slider-container_2").get(0).slick.setPosition();
+    // });
+    //
+    // $(".cp-nav-text_3").click(function(){
+    //     $(".cp-nav-link").removeClass("is-active");
+    //     $(this).addClass("is-active");
+    //     $(".cp-slider").removeClass("is-active");
+    //     $(".slider-container_3").addClass("is-active");
+    //     $(".slider-container_3").get(0).slick.setPosition();
+    // });
+    //
+    // $(".cp-nav-text_4").click(function(){
+    //     $(".cp-nav-link").removeClass("is-active");
+    //     $(this).addClass("is-active");
+    //     $(".cp-slider").removeClass("is-active");
+    //     $(".slider-container_4").addClass("is-active");
+    //     $(".slider-container_4").get(0).slick.setPosition();
+    // });
 
     //GSS MAPS
     $("#gss-map_ph").click(function(){
@@ -114,34 +114,6 @@ $(document).ready(function(){
          fade: true,
          focusOnSelect: true
     });
-    $('.slider-container_2').slick({
-         slidesToShow: 1,
-         slidesToScroll: 1,
-         dots: false,
-         infinite: false,
-         speed: 300,
-         fade: true,
-         focusOnSelect: true
-    });
-    $('.slider-container_3').slick({
-         slidesToShow: 1,
-         slidesToScroll: 1,
-         dots: false,
-         infinite: false,
-         speed: 300,
-         fade: true,
-         focusOnSelect: true
-    });
-    $('.slider-container_4').slick({
-         slidesToShow: 1,
-         slidesToScroll: 1,
-         dots: false,
-         infinite: false,
-         speed: 300,
-         fade: true,
-         focusOnSelect: true
-    });
-
   // STICKY NAV BAR
 
 //   $(window).scroll(function(){
@@ -171,7 +143,7 @@ $(document).ready(function(){
 
         if (target.length) {
           $('html,body').stop().animate({
-            scrollTop: target.offset().top - 90//offsets for fixed header
+            scrollTop: target.offset().top - 110//offsets for fixed header
           }, 'linear');
         }
       }
@@ -248,24 +220,24 @@ if ($('.tech-icons').isInViewport()) {
     }, 300 );
   $('.tech-icons').addClass('animated fadeInUp');
 }
-if ($('.car-path-title').isInViewport()) {
-  $( "car-path-title" ).animate({
-    opacity: [1]
-    }, 300 );
-  $('.car-path-title').addClass('animated fadeInUp');
-}
-if ($('.car-path-menu').isInViewport()) {
-  $( ".car-path-menu" ).animate({
-    opacity: [1]
-    }, 300 );
-  $('.car-path-menu').addClass('animated fadeInUp');
-}
-if ($('.cp-slider').isInViewport()) {
-  $( ".cp-slider" ).animate({
-    opacity: [1]
-    }, 300 );
-  $('.cp-slider').addClass('animated fadeIn');
-}
+// if ($('.car-path-title').isInViewport()) {
+//   $( "car-path-title" ).animate({
+//     opacity: [1]
+//     }, 300 );
+//   $('.car-path-title').addClass('animated fadeInUp');
+// }
+// if ($('.car-path-menu').isInViewport()) {
+//   $( ".car-path-menu" ).animate({
+//     opacity: [1]
+//     }, 300 );
+//   $('.car-path-menu').addClass('animated fadeInUp');
+// }
+// if ($('.cp-slider').isInViewport()) {
+//   $( ".cp-slider" ).animate({
+//     opacity: [1]
+//     }, 300 );
+//   $('.cp-slider').addClass('animated fadeIn');
+// }
 // if ($('.serv-h2').isInViewport()) {
 //   $( ".serv-h2" ).animate({
 //     opacity: [1]
