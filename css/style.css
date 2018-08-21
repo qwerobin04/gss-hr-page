@@ -1535,7 +1535,12 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   .cp-container {
     height: 100%;
   }
-
+  .serv-container {
+    height: 100%;
+  }
+  .ep-container {
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 450px) {
