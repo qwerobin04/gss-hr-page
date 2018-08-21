@@ -165,12 +165,12 @@ if ($('.left-block').isInViewport()) {
   $( ".left-block" ).animate({
     opacity: [1]
     }, 300 );
-  $('.left-block').addClass('animated fadeInUp');
+  $('.left-block').addClass('animated fadeIn');
 }
 if ($('.right-block').isInViewport()) {
   $( ".right-block" ).animate({
     opacity: [1]
-    }, 300 );
+  }, 300 );
   $('.right-block').addClass('animated fadeInUp');
 }
 if ($('.left-block_e-perks').isInViewport()) {
@@ -183,7 +183,7 @@ if ($('.right-block_e-perks').isInViewport()) {
   $( ".right-block_e-perks" ).animate({
     opacity: [1]
     }, 300 );
-  $('.right-block_e-perks').addClass('animated fadeInUp');
+  $('.right-block_e-perks').addClass('animated fadeIn');
 }
 if ($('.tech-title').isInViewport()) {
   $( ".tech-title" ).animate({
@@ -201,7 +201,7 @@ if ($('.left-block_cp').isInViewport()) {
   $( ".left-block_cp" ).animate({
     opacity: [1]
     }, 300 );
-  $('.left-block_cp').addClass('animated fadeInUp');
+  $('.left-block_cp').addClass('animated fadeIn');
 }
 if ($('.right-block_cp').isInViewport()) {
   $( ".right-block_cp" ).animate({

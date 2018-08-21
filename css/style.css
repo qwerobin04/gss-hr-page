@@ -502,7 +502,7 @@ p.tech-text {
 
 .cp-container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #fff;
   overflow: hidden;
 }
@@ -1531,6 +1531,9 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   }
   h2.title_cp {
     font-size: 2.2rem;
+  }
+  .cp-container {
+    height: 100%;
   }
 
 }
