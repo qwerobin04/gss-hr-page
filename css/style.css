@@ -657,6 +657,7 @@ h2.serv-title {
   top: 50%;
   left: 80px;
   transform: translateY(-50%);
+  font-size: 14px;
 }
 
 .right-block p {

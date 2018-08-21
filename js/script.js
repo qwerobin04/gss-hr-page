@@ -185,18 +185,6 @@ if ($('.right-block_e-perks').isInViewport()) {
     }, 300 );
   $('.right-block_e-perks').addClass('animated fadeInUp');
 }
-if ($('.left-block_cp').isInViewport()) {
-  $( ".left-block_cp" ).animate({
-    opacity: [1]
-    }, 300 );
-  $('.left-block_cp').addClass('animated fadeInUp');
-}
-if ($('.right-block_cp').isInViewport()) {
-  $( ".right-block_cp" ).animate({
-    opacity: [1]
-    }, 300 );
-  $('.right-block_cp').addClass('animated fadeInUp');
-}
 if ($('.tech-title').isInViewport()) {
   $( ".tech-title" ).animate({
     opacity: [1]
@@ -208,6 +196,18 @@ if ($('.tech-icons').isInViewport()) {
     opacity: [1]
     }, 300 );
   $('.tech-icons').addClass('animated fadeInUp');
+}
+if ($('.left-block_cp').isInViewport()) {
+  $( ".left-block_cp" ).animate({
+    opacity: [1]
+    }, 300 );
+  $('.left-block_cp').addClass('animated fadeInUp');
+}
+if ($('.right-block_cp').isInViewport()) {
+  $( ".right-block_cp" ).animate({
+    opacity: [1]
+    }, 300 );
+  $('.right-block_cp').addClass('animated fadeInUp');
 }
 if ($('.connect-p').isInViewport()) {
   $('.connect-p').addClass('animated pulse');
