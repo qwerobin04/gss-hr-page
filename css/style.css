@@ -1,4 +1,7 @@
 /* CSS STYLES STARTS HERE!!! */
+:root {
+    --main-bg-color: ;
+}
 
 * {
   margin: 0;
@@ -245,10 +248,10 @@ video {
 }
 
 .h-content1 {
-  margin: 50px 30px 0;
-  font-size: 18px;
+  margin: 20px 30px 0;
   text-align: center;
   opacity: 0;
+  line-height: 2;
 }
 
 .h-content1 a {
@@ -298,26 +301,36 @@ video {
 
 .slick-prev {
   top: 50%;
-  left: -40px;
-  background-image: url(/img/prev.png);
+  left: -15px;
+  background-image: url(/img/careerPrev.png);
   background-repeat: no-repeat;
+  background-size: contain;
+  height: 30px;
+  width: 30px;
   cursor: pointer;
   font-size: 0;
-  padding: 23px;
+  opacity: .05;
+}
+.slick-prev:hover {
+  opacity: 1;
+  transition: .5s
 }
 
 .slick-next {
   top: 50%;
-  right: -35px;
-  background-image: url(/img/next.png);
+  right: -30px;
+  background-image: url(/img/careerNext.png);
   background-repeat: no-repeat;
+  background-size: contain;
+  height: 30px;
+  width: 30px;
   cursor: pointer;
   font-size: 0;
-  padding: 22px;
+  opacity: .05;
 }
-
-.slick-disabled {
-  opacity: .5;
+.slick-next:hover {
+  opacity: 1;
+  transition: .5s;
 }
 
 .slider-nav-bg {
@@ -489,14 +502,14 @@ p.tech-text {
 
 .cp-container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #fff;
   overflow: hidden;
 }
 
 .cp-wrapper {
   max-width: 1110px;
-  margin: 80px auto;
+  margin: 40px auto;
   display: flex;
   justify-content: space-between;
     position: relative;
@@ -531,13 +544,13 @@ p.tech-text {
 }
 
 .left-block_cp {
-  width: 50%;
+  width: 45%;
   position: relative;
 }
 .left-block_cp::before {
   content: "";
   height: 600px;
-  width: 320px;
+  width: 80%;
   position: absolute;
   top: -55px;
   left: 70px;
@@ -545,9 +558,10 @@ p.tech-text {
 }
 .left-block_cp img {
   position: absolute;
+  width: 100%;
 }
 .right-block_cp {
-  width: 50%;
+  width: 55%;
 }
 
 h2.title_cp {
@@ -571,8 +585,7 @@ h2.title_cp {
   justify-content: space-between;
 }
 
-.left-block,
-.left-block img {
+.left-block{
   position: relative;
 }
 
@@ -593,6 +606,8 @@ h2.title_cp {
 .left-block img {
   margin-top: 60px;
   width: 80%;
+  position: absolute;
+  margin-left: 20px;
 }
 
 h2.serv-title {
@@ -606,6 +621,7 @@ h2.serv-title {
 
 .right-block {
   width: 50%;
+  padding: 0 20px;
 }
 
 .right-block_list {
@@ -622,7 +638,7 @@ h2.serv-title {
   content: "";
   height: 1px;
   width: 86%;
-  background: #000;
+  background: #ddd;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -980,6 +996,48 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   .rocket-p {
     font-size: 9px;
   }
+
+  .left-block_e-perks {
+    width: 50%;
+  }
+  .right-block_e-perks {
+    width: 40%;
+  }
+  .right-block_e-perks::before {
+    width: 90%;
+  }
+  .right-block_e-perks img:first-child {
+    width: 75%;
+    top: 80px;
+  }
+  .right-block_e-perks img:nth-child(2n) {
+    width: 65%;
+    top: 230px;
+    right: 155px;
+  }
+  .right-block_e-perks img:last-child {
+    width: 80%;
+    top: 330px;
+  }
+  h2.title_e-perks {
+    font-size: 2.5rem;
+  }
+  h2.tech-title {
+    font-size: 2.5rem;
+  }
+  h2.title_cp {
+    font-size: 2.5rem;
+  }
+  h2.serv-title {
+    font-size: 2.5rem;
+  }
+  .left-block_cp-img {
+    width: 100%;
+  }
+  .left-block_cp::before {
+    width: 80%;
+  }
+
 }
 
 
@@ -1015,14 +1073,13 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   }
   .h-content1 {
     text-align: justify;
-    margin: 50px 30px 0;
+    margin: 20px 30px 0;
   }
   .tech-icons {
     grid-template-columns: auto auto auto;
     margin: 0 30px;
   }
   .interested {
-    margin-bottom: 20px;
     padding-left: 10px;
   }
   .inter-h2 {
@@ -1086,7 +1143,7 @@ background: linear-gradient(to right, #F9D423, #e65c00);
     font-size: 16px;
   }
   .h-wwaat {
-    font-size: 32px;
+    font-size: 2.4rem;
   }
   .gitwu {
     padding: 10px;
@@ -1112,8 +1169,6 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   .rocket-p {
     font-size: 8px;
   }
-
-
   .hamburger {
     display: inline-block;
     padding: 10px 10px 0;
@@ -1219,6 +1274,81 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   }
 
 
+    .ep-container {
+      margin: 50px 0 50px;
+    }
+    .left-block {
+      display: none;
+    }
+    .right-block {
+      width: 100%;
+      padding: 0 20px;
+    }
+    h2.serv-title {
+      text-align: center;
+      font-size: 2.4rem;
+      margin-top: 40px;
+    }
+    .left-block_e-perks {
+      width: 100%;
+      margin: 50px 20px 0;
+  }
+    .right-block ul li::before {
+      width: 90%;
+    }
+
+    .left-block_e-perks {
+      width: 100%;
+      margin: 0 20px 0;
+    }
+    .right-block_e-perks {
+      display: none;
+    }
+
+    h2.title_e-perks {
+      font-size: 2.4rem;
+      margin-left: 0;
+      text-align: center;
+    }
+    .left-block_e-perks ul li {
+    margin-left: 0;
+    }
+    h2.tech-title {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    }
+    .left-block_cp {
+      display: none;
+    }
+    .right-block_cp {
+      width: 100%;
+    }
+    .cp-content-title {
+      text-align: center;
+    }
+    .cp-content-text2 {
+      font-size: 18px;
+    }
+    h2.title_cp {
+      font-size: 2.4rem;
+      margin-left: 0;
+      text-align: center;
+    }
+    .content-container {
+      width: 85%;
+      margin: 0 auto;
+    }
+    .cp-content {
+      height: 500px;
+    }
+
+    .slick-prev {
+      left: 25px;
+    }
+    .slick-next {
+      right: 20px;
+    }
+
 }
 
 @media screen and (max-width: 568px) {
@@ -1298,10 +1428,6 @@ background: linear-gradient(to right, #F9D423, #e65c00);
     padding: 14px;
   }
 
-  .slick-arrow {
-    background-size: 100%;
-  }
-
   .cp-content-title {
     font-size: 24px;
   }
@@ -1328,6 +1454,7 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   .inter-wrapper {
     display: block;
     text-align: center;
+    margin: -15px auto;
   }
 
   .interested {
@@ -1372,6 +1499,37 @@ background: linear-gradient(to right, #F9D423, #e65c00);
 
   .connect-p {
     margin-left: 20px;
+  }
+  .right-block p {
+    font-size: 14px;
+  }
+  .right-block ul li::before {
+      width: 82%;
+  }
+  .left-block_e-perks ul li p {
+  font-size: 12px;
+}
+
+  .h-wwaat {
+    font-size: 2rem;
+  }
+
+  .h-content1 {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  h2.serv-title {
+    font-size: 2rem;
+  }
+  h2.title_e-perks {
+    font-size: 2rem;
+  }
+  h2.tech-title {
+    font-size: 2rem;
+  }
+  h2.title_cp {
+    font-size: 2.2rem;
   }
 
 }
@@ -1420,6 +1578,9 @@ background: linear-gradient(to right, #F9D423, #e65c00);
     }
 }
 @media screen and (max-width: 375px) {
+  .right-block ul li::before {
+    width: 75%;
+}
 
   .tech-icons .tech-img {
   width: auto;
