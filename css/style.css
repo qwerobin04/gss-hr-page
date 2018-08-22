@@ -534,7 +534,7 @@ p.tech-text {
 
 .cp-content-title {
   font-size: 1.8rem;
-  color: #000;
+  color: #ffa500;
 }
 
 .cp-content-text2 {
@@ -551,11 +551,11 @@ p.tech-text {
 }
 .left-block_cp::before {
   content: "";
-  height: 550px;
-  width: 80%;
+  height: 565px;
+  width: 70%;
   position: absolute;
   top: -25px;
-  left: 50px;
+  left: 70px;
   background: #e1f2dd;
 }
 .left-block_cp img {
