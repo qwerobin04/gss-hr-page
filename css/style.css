@@ -510,7 +510,7 @@ p.tech-text {
 
 .cp-wrapper {
   max-width: 1110px;
-  margin: 40px auto;
+  margin: 70px auto;
   display: flex;
   justify-content: space-between;
     position: relative;
@@ -1044,8 +1044,10 @@ background: linear-gradient(to right, #F9D423, #e65c00);
     width: 100%;
   }
   .left-block_cp::before {
-    width: 80%;
+    width: 60%;
+    height: 470px;
   }
+
 
 }
 
