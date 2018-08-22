@@ -367,9 +367,11 @@ video {
 }
 .left-block_e-perks{
   width: 45%;
+  opacity: 0;
 }
 .right-block_e-perks{
   width: 50%;
+  opacity: 0;
 }
 h2.title_e-perks {
   margin-top: 38px;
@@ -546,6 +548,7 @@ p.tech-text {
 .left-block_cp {
   width: 45%;
   position: relative;
+  opacity: 0;
 }
 .left-block_cp::before {
   content: "";
@@ -562,6 +565,7 @@ p.tech-text {
 }
 .right-block_cp {
   width: 55%;
+  opacity: 0;
 }
 
 h2.title_cp {
@@ -591,6 +595,7 @@ h2.title_cp {
 
 .left-block {
   width: 50%;
+  opacity: 0;
 }
 
 .left-block::before {
@@ -622,6 +627,7 @@ h2.serv-title {
 .right-block {
   width: 50%;
   padding: 0 20px;
+  opacity: 0;
 }
 
 .right-block_list {
