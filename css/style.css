@@ -357,6 +357,7 @@ video {
   position: relative;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 
 .ep-wrapper {
@@ -586,7 +587,8 @@ h2.title_cp {
 .serv-container {
   position: relative;
   width: 100%;
-  height: 100vh
+  height: 100vh;
+  overflow: hidden;
 }
 .serv-wrapper {
   max-width: 1110px;
