@@ -309,7 +309,7 @@ video {
   width: 30px;
   cursor: pointer;
   font-size: 0;
-  opacity: .05;
+  opacity: .7;
 }
 .slick-prev:hover {
   opacity: 1;
@@ -326,7 +326,7 @@ video {
   width: 30px;
   cursor: pointer;
   font-size: 0;
-  opacity: .05;
+  opacity: .7;
 }
 .slick-next:hover {
   opacity: 1;
@@ -413,6 +413,7 @@ h2.title_e-perks {
   left: 80px;
   line-height: 1.5;
   text-align: justify;
+  margin-bottom: 5px;
 }
 
 .right-block_e-perks {
@@ -431,16 +432,19 @@ h2.title_e-perks {
   position: absolute;
 }
 .right-block_e-perks img:first-child {
-  top: 10px;
+  top: 30px;
   right: 30px;
+  width: 300px
 }
 .right-block_e-perks img:nth-child(2n) {
   top: 185px;
   right: 240px;
+  width: 265px;
 }
 .right-block_e-perks img:last-child {
   top: 315px;
   right: 0;
+  width: 330px;
 }
 
 
