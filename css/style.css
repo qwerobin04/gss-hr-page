@@ -1456,8 +1456,8 @@ background: linear-gradient(to right, #F9D423, #e65c00);
 
   .gss-map-link {
     display: flex;
-    top: 95px;
-    right: 0px;
+    top: 198px;
+    left: 50px;
   }
 
   .inter-wrapper {
