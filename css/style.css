@@ -515,7 +515,7 @@ p.tech-text {
 
 .cp-wrapper {
   max-width: 1110px;
-  margin: 90px auto;
+  margin: 80px auto;
   display: flex;
   justify-content: space-between;
     position: relative;
@@ -624,7 +624,7 @@ h2.title_cp {
 }
 
 h2.serv-title {
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: 15px;
   font-family: "montserrat";
   font-weight: 700;
