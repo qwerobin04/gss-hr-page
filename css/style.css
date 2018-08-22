@@ -400,12 +400,11 @@ h2.title_e-perks {
 .left-block_e-perks ul li img {
   top: 0;
 }
-
 .left-block_e-perks ul li span {
   top: -5px;
   left: 80px;
   font-weight: bold;
-  color: #000;
+  color: #ffa500;
   letter-spacing: 1px;
 }
 
@@ -552,16 +551,19 @@ p.tech-text {
 }
 .left-block_cp::before {
   content: "";
-  height: 600px;
+  height: 550px;
   width: 80%;
   position: absolute;
-  top: -55px;
-  left: 70px;
+  top: -25px;
+  left: 50px;
   background: #e1f2dd;
 }
 .left-block_cp img {
   position: absolute;
   width: 100%;
+}
+.left-block_e-perks ul li img:nth-child(1n) {
+  width: 50px;
 }
 .right-block_cp {
   width: 55%;
@@ -1353,7 +1355,7 @@ background: linear-gradient(to right, #F9D423, #e65c00);
       left: 25px;
     }
     .slick-next {
-      right: 20px;
+      right: 15px;
     }
 
 }
@@ -1626,12 +1628,18 @@ background: linear-gradient(to right, #F9D423, #e65c00);
   .team-container {
       width: 100vw;
   }
+  .left-block_e-perks ul li span {
+    font-size: 14px;
+  }
 
 }
 
 @media screen and (max-width: 320px) {
   .team-container {
       width: 100vw;
+  }
+  .hamburger {
+    margin-right: 0;
   }
 
 }
