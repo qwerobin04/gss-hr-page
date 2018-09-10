@@ -42,6 +42,7 @@ $(document).ready(function(){
 
     $('.slider-nav').slick({
      dots: false,
+     arrows: false,
      focusOnSelect: true,
      autoplay: true,
      autoplaySpeed: 4000,
